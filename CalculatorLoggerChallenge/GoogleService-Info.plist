@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1062944068557-h0m7nfu2539ktiscjfn5ispahiu1q876.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1062944068557-h0m7nfu2539ktiscjfn5ispahiu1q876</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC5sqf7qEOU8scgspekBRojRjDBxjwx95U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1062944068557</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Milgrew.CalculatorLoggerChallenge</string>
+	<key>PROJECT_ID</key>
+	<string>calculatorinterviewchallenge</string>
+	<key>STORAGE_BUCKET</key>
+	<string>calculatorinterviewchallenge.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1062944068557:ios:6d93cb20ea862536dfea84</string>
+	<key>DATABASE_URL</key>
+	<string>https://calculatorinterviewchallenge.firebaseio.com</string>
+</dict>
+</plist>

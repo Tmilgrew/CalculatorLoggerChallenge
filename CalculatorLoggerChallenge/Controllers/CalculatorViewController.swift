@@ -28,14 +28,19 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func numbers(_ sender: UIButton) {
-        print("in numbers")
         if performingMath == true {
             equationLabel.text = String(sender.tag - 1)
             numberOnScreen = Double(equationLabel.text!)!
             performingMath = false
         } else {
-            equationLabel.text = equationLabel.text! + String(sender.tag - 1)
-            numberOnScreen = Double(equationLabel.text!)!
+            if equationLabel.text == "0" {
+                equationLabel.text = String(sender.tag - 1)
+                numberOnScreen = Double(equationLabel.text!)!
+            }else {
+                equationLabel.text = equationLabel.text! + String(sender.tag - 1)
+                numberOnScreen = Double(equationLabel.text!)!
+            }
+            
         }
     }
 
@@ -121,7 +126,7 @@ class CalculatorViewController: UIViewController {
                 }
             }
         } else if sender.tag == 11 {
-            equationLabel.text = ""
+            equationLabel.text = "0"
             numberOnScreen = 0
             previousNumber = 0
             operation = 0

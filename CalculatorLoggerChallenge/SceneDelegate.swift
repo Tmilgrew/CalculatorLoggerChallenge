@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  CalculatorLoggerChallenge
+//  CalculatorInterviewChallenge
 //
-//  Created by Thomas Milgrew on 9/11/20.
+//  Created by Thomas Milgrew on 9/8/20.
 //  Copyright © 2020 Thomas Milgrew. All rights reserved.
 //
 
@@ -18,6 +18,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+    }
+    
+    func changeRootViewController(_ vc: UIViewController, animated: Bool = true) {
+        guard let window = self.window else {
+            return
+        }
+        
+        // change the root view controller to your specific view controller
+        window.rootViewController = vc
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
