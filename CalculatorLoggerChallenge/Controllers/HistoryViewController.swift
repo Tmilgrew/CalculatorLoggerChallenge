@@ -71,7 +71,8 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource {
             let calculation = calculationHistory[indexPath.row]
             let dateArray = calculation.logTime.components(separatedBy: " ")
             cell.textLabel?.font = UIFont.systemFont(ofSize: 18)
-            cell.textLabel?.text = calculation.logMessage + " on " + dateArray[0] + " at " + dateArray[1]
+            cell.textLabel?.text = calculation.logMessage 
+            cell.detailTextLabel?.text = dateArray[0] + " at " + dateArray[1]
         }
         return cell
     }
