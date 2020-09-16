@@ -65,10 +65,13 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "historylog", for: indexPath)
         if calculationHistory.count == 0 {
+            cell.textLabel?.font = UIFont.systemFont(ofSize: 18)
             cell.textLabel?.text = "There are no calculations made"
         } else {
             let calculation = calculationHistory[indexPath.row]
-            cell.textLabel?.text = calculation.logMessage
+            let dateArray = calculation.logTime.components(separatedBy: " ")
+            cell.textLabel?.font = UIFont.systemFont(ofSize: 18)
+            cell.textLabel?.text = calculation.logMessage + " on " + dateArray[0] + " at " + dateArray[1]
         }
         return cell
     }
