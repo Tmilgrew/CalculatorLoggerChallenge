@@ -1,7 +1,7 @@
 # CalculatorLoggerChallenge
 
 ## Overview
-This is the challenge project to create a mobile app (using React Native/Android/iOS) which logs calculations as they happen and shares those calculations with everyone connected to the app.  I chose to use Swift for the source code and Firebase for backend authentication and services.
+This is the challenge project to create a mobile app (iOS) which logs calculations as they happen and shares those calculations with everyone connected to the app.  I chose to use Swift for the source code and Firebase for backend authentication and services.
 
 ## Steps to Build and Run
 1. Clone this repository onto your local machine
